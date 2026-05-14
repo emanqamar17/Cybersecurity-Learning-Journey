@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>XSS Demo</title>
+</head>
+<body>
+
+    <h1>DOM XSS Demo</h1>
+
+    <input id="name" placeholder="Type here">
+
+    <div id="output"></div>
+
+    <script>
+        document.getElementById("name").addEventListener("input", function () {
+            document.getElementById("output").innerHTML = this.value;
+        });
+    </script>
+
+</body>
+</html>
